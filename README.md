@@ -1,5 +1,5 @@
 # russian_twitter_analysis
-Repository of code to analyze political Twitter in Russia for political or social purposes. See http://rudatalab.com/about/ for detail about the uses of this code to analyze the politics of Russia.
+This is a repository of code to analyze political Twitter in Russia for political or social purposes. See http://rudatalab.com/about/ for more detail about the uses of this code to analyze the politics of Russia.
 
 <h2>Includes:</h2>
 <ol>
