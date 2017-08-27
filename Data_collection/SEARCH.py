@@ -3,7 +3,6 @@
 import re, sys, time, json, unicodedata, tweepy, collections
 from tweepy import OAuthHandler
 from re import sub
-import twitterKeys as twtkeys
 from MySQL_CategorizeNSave import CategorizeNsave
 
 '''
