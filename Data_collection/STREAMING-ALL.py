@@ -2,7 +2,6 @@
 
 import tweepy, time
 from MySQL_CategorizeNSave import CategorizeNsave
-import twitterKeys as twtkeys
 
 import queue, threading
 
