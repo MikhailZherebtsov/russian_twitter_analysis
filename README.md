@@ -11,12 +11,13 @@ Repository of code to analyze political Twitter in Russia for political or socia
 <h2>Detail:</h2> 
 <ol>
   <li><b>Database:</b></li>
-  <p>A database schema is created with tables to normalize data necessary for analysis -- not all data is saved.</p>
+  <p>A database schema is created with tables to normalize data necessary for analysis.</p>
   <ol>
-    <li>install MySQL server and create a database schema using <i>db_create_query.sql</i></li>
+    <li>install MySQL server;</li>
+    <li>Create the schema using <i>db_create_query.sql</i></li>
   </ol>
   <li><b>Data collection:</b></li>
-  <p>Data collection can be done in 2 main ways: streaming and/or search. <b>NOTE</b>: All search methods require data normalization in order to be saved to the MySQL DB -- done by the <i>MySQL_CategorizeNSave.py</i> script.</p>
+  <p>Data collection can be done in 2 main ways: streaming and/or search (which can also be filtered to limit by lanugage only or by keywords. <b>NOTE</b>: All search methods require data normalization to the relevant MySQL DB tables. This is done by the <i>MySQL_CategorizeNSave.py</i> script.</p>
   <ul>
     <li>Collect data from the REST API by searching for specific keywords;</li>
     <li>Stream data from the Streaming API by specific keywords;</li>
