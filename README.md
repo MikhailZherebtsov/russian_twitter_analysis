@@ -20,7 +20,6 @@ This is a repository of code to analyze political Twitter in Russia for politica
   <p>Data collection can be done in 2 main ways: streaming and/or search (which can also be filtered to limit by lanugage only or by keywords. <b>NOTE</b>: All search methods require data normalization to the relevant MySQL DB tables. This is done by the <i>MySQL_CategorizeNSave.py</i> script.</p>
   <ul>
     <li>Collect data from the REST API by searching for specific keywords;</li>
-    <li>Stream data from the Streaming API by specific keywords;</li>
     <li>Stream data from the Streaming API filtered only by a specific language (to get an overall impact of all discussions in a speicific language).</li>
     <li>Once above data is collected, the follow/friend relationships of all users in the captured sample(s) can be obtained for SNA purposes.</li>
   </ul>
