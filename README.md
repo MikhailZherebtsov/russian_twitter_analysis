@@ -2,25 +2,29 @@
 Repository of code to analyze political Twitter in Russia for political or social purposes. See http://rudatalab.com/about/ for detail about the uses of this code to analyze the politics of Russia.
 
 <h2>Includes:</h2>
-<div>
-  (1) database schema creation; 
-  (2) data collection from the Twitter APIs, 
-  (3) analysis.
-</div>
+<ol>
+  <li>database schema creation;</li>
+  <li>data collection from the Twitter APIs,</li>
+  <li>analysis.</li>
+</ol>
 
 <h2>Detail:</h2> 
 <ol>
   <li><b>Database:</b></li>
   <p>A database schema is created with tables to normalize data necessary for analysis -- not all data is saved.</p>
   <ol>
-    <li>install MySQL server and create a database schema using db_create_query.sql</li>
+    <li>install MySQL server and create a database schema using <i>db_create_query.sql</i></li>
   </ol>
   <li><b>Data collection:</b></li>
-  <p>Data collection can be done in several ways</p>
-  a) Collect data from the REST API by searching for specific keywords;
-  b) Stream data from the Streaming API by specific keywords; 
-  c) Stream data from the Streaming API filtered only by a specific language (to get an overall impact of all discussions in a speicific language).
-  d) Once above data is collected, the follow/friend relationships of all users in the captured sample(s) can be obtained for SNA purposes.
-3) Analysis:
-  a) Automatic detection of communities based on friendships collected using the infomap method
+  <p>Data collection can be done in 2 main ways: streaming and/or search. <b>NOTE</b>: All search methods require data normalization in order to be saved to the MySQL DB -- done by the <i>MySQL_CategorizeNSave.py</i> script.</p>
+  <ul>
+    <li>Collect data from the REST API by searching for specific keywords;</li>
+    <li>Stream data from the Streaming API by specific keywords;<li>
+    <li>Stream data from the Streaming API filtered only by a specific language (to get an overall impact of all discussions in a speicific language).</li>
+    <li>Once above data is collected, the follow/friend relationships of all users in the captured sample(s) can be obtained for SNA purposes.</li>
+  </ul>
+  <li><b>Analysis:</b></li>
+  <ol>
+    <li>Automatic detection of communities based on friendships collected using the infomap method.</li>
+  </ol>
 </ol>
