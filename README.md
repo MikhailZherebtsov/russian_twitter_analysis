@@ -21,10 +21,11 @@ This is a repository of code to analyze political Twitter in Russia for politica
   <ul>
     <li><i>SEARCH.py</i> - collect data from the REST API by searching for specific keywords;</li>
     <li><i>STREAMING-ALL.py</i> - stream data from the Streaming API filtered only by a specific language (to get an overall impact of all discussions in a speicific language).</li>
-    <li>Once above data is collected, the follow/friend relationships of all users in the captured sample(s) can be obtained for SNA purposes.</li>
+    <li><i>Friendship_collection.py</i> - once above data is collected, the follow/friend relationships of all users in the captured sample(s) can be obtained for SNA purposes.</li>
   </ul>
   <li><b>Analysis:</b></li>
   <ol>
-    <li>Automatic detection of communities based on friendships collected using the infomap method.</li>
+    <li><i>Detect_communities.py</i> - automatic detection of communities based on friendships collected using the infomap method;</li>
+    <li><i>Conversation_polarization.py</i> - create cross- and intra- community statistics to evaluate homophily
   </ol>
 </ol>
