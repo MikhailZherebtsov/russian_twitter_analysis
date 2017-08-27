@@ -7,9 +7,11 @@ Repository of code to analyze political Twitter in Russia for political or socia
   (3) analysis.
 
 <h2>Detail:</h2> 
-1) Database:
+<div>1) Database:</div>
+<div>
   A database schema is created with tables to normalize data necessary for analysis -- not all data is saved. 
   a) install MySQL server and create a database schema using db_create_query.sql
+</div>
 2) Data collection:
   Data collection can be done in several ways
   a) Collect data from the REST API by searching for specific keywords;
