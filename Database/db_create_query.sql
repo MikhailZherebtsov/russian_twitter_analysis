@@ -1,6 +1,17 @@
 DROP DATABASE twitterdb;
 CREATE DATABASE IF NOT EXISTS twitterdb;
 
+CREATE TABLE IF NOT EXISTS twitterdb.event_summary(
+	id VARCHAR(5) PRIMARY KEY,
+    table_name_in_db TEXT,
+    date_start DATETIME DEFAULT NULL,
+    date_end DATETIME DEFAULT NULL,
+    sample_type TEXT,
+    sample_modularity DECIMAL(8,7) DEFAULT NULL,
+    done VARCHAR(1) DEFAULT NULL,
+    num_tweets BIGINT(20) DEFAULT NULL,
+    num_rts BIGINT(20) DEFAULT NULL,
+    num_users BIGINT(20) DEFAULT NULL);
 CREATE TABLE IF NOT EXISTS twitterdb.usersMaster (
 	userid VARCHAR(18) PRIMARY KEY,
     username TEXT,
